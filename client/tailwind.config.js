@@ -7,7 +7,12 @@ module.exports = {
   	"./src/components/ListItem.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '76': '19rem',
+        '30': '7.5rem'
+      }
+    },
   },
   plugins: [],
 }
