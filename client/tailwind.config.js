@@ -5,6 +5,8 @@ module.exports = {
   	"./src/components/Featured.js",
   	"./src/components/List.js",
   	"./src/components/ListItem.js",
+    "./src/pages/Register.js",
+    "./src/pages/Login.js",
   ],
   theme: {
     extend: {

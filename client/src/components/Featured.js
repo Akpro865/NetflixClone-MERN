@@ -14,11 +14,11 @@ function Featured() {
 	     	img elements must have an alt prop, either with meaningful text, or an empty string for decorative images
 	     	</span>
 	     	<div className='text-lg mt-4 flex'>
-	     		<button className='bg-white p-3 rounded ml-4 hover:bg-blue-600 hover:text-white'>
+	     		<button className='border-none bg-white p-3 rounded ml-4 hover:bg-blue-600 hover:text-white'>
 	     			<PlayArrowOutlinedIcon />
 	     			<span className='ml-2'>Play</span>
 	     		</button>
-	     		<button className='p-3 rounded bg-gray-300 ml-6 hover:bg-blue-600 hover:text-white'>
+	     		<button className='border-none p-3 rounded bg-gray-300 ml-6 hover:bg-blue-600 hover:text-white'>
 	     			<InfoOutlinedIcon />
 	     			<span className='ml-2'>Info</span>
 	     		</button>
