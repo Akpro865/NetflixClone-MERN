@@ -7,6 +7,7 @@ module.exports = {
   	"./src/components/ListItem.js",
     "./src/pages/Register.js",
     "./src/pages/Login.js",
+    "./src/pages/Watch.js",
   ],
   theme: {
     extend: {
