@@ -10,7 +10,10 @@ module.exports = {
     "./src/pages/Watch.js",
     "./src/pages/dashboard/Topbar.js",
     "./src/pages/dashboard/Sidebar.js",
-    "./src/App.js"
+    "./src/App.js",
+    "./src/pages/dashboard/components/DashHome.js",
+    "./src/pages/dashboard/components/FeaturedInfo.js",
+    "./src/pages/dashboard/components/Chart.js",
   ],
   theme: {
     extend: {

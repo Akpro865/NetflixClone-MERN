@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import Watch from './pages/Watch'
 import Topbar from './pages/dashboard/Topbar'
 import Sidebar from './pages/dashboard/Sidebar'
+import DashHome from './pages/dashboard/components/DashHome'
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
      <Topbar />
      <div className='flex'>
      	<Sidebar />
-     	<div className='basis-4/5'></div>
+     	<DashHome />
      </div>
      
     </div>
