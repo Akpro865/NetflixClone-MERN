@@ -8,6 +8,9 @@ module.exports = {
     "./src/pages/Register.js",
     "./src/pages/Login.js",
     "./src/pages/Watch.js",
+    "./src/pages/dashboard/Topbar.js",
+    "./src/pages/dashboard/Sidebar.js",
+    "./src/App.js"
   ],
   theme: {
     extend: {

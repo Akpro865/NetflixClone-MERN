@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className='home overflow-hidden'>
     	<Header />
-    	<Featured />
+    	<Featured type='movie'/>
     	<List />
     	<List />
     	<List />
