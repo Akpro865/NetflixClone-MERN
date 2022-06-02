@@ -1,0 +1,23 @@
+.transaction1 {
+	box-shadow: 1px 1px 15px -10px rgba(0, 0, 0 , 0.6)
+}
+
+.dynbutton {
+	padding: 6px;
+	border-radius: 20px;
+	font-size: 12px
+}
+
+.dynbutton.approved {
+		background-color: #e5faf2;
+		color: #3bb077;
+}
+
+.dynbutton.declined {
+		background-color: #fff0f1;
+		color: #d95087;
+}
+.dynbutton.pending {
+		background-color: #ebf1fe;
+		color: #3bb077;
+}

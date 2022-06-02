@@ -14,6 +14,8 @@ module.exports = {
     "./src/pages/dashboard/components/DashHome.js",
     "./src/pages/dashboard/components/FeaturedInfo.js",
     "./src/pages/dashboard/components/Chart.js",
+    "./src/pages/dashboard/components/LatestTransactions.js",
+    "./src/pages/dashboard/components/LatestUser.js",
   ],
   theme: {
     extend: {

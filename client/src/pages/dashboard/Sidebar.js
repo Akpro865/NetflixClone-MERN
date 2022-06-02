@@ -14,7 +14,7 @@ import './sidebar.scss'
 
 function Sidebar() {
   return (
-  	<div className='side1 basis-1/5 bg-green-50'>
+  	<div className='side1 sticky top-14 left-0 basis-1/5 bg-green-50'>
     	<div className='flex flex-col content-center'>
     		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Dashboard</h3>
     		<div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>

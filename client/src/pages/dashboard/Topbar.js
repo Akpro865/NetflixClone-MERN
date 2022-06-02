@@ -7,7 +7,7 @@ function Topbar() {
   return (
   	<div className='bg-white h-14 w-full sticky top-0 z-50'>
   	 <div className='h-full px-5 flex justify-between items-center'>
-	    <div className='text-2xl font-bold text-blue-600'>
+	    <div className='text-2xl font-bold text-gray-800'>
 	     	AkDashboard
 	    </div>
 	    <div className='flex gap-2 items-center'>
