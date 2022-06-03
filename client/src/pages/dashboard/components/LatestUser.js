@@ -1,4 +1,4 @@
-import './user.scss'
+import './LatestUser.scss'
 import { Users } from './dummydb'
 
 function LateaUser() {

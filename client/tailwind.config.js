@@ -16,6 +16,8 @@ module.exports = {
     "./src/pages/dashboard/components/Chart.js",
     "./src/pages/dashboard/components/LatestTransactions.js",
     "./src/pages/dashboard/components/LatestUser.js",
+    "./src/pages/dashboard/components/UserList.js",
+    "./src/pages/dashboard/components/User.js",
   ],
   theme: {
     extend: {

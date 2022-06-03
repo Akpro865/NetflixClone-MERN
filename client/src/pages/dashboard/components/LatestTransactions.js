@@ -1,4 +1,4 @@
-import './transaction.scss'
+import './LatestTransactions.scss'
 import { data1 } from './dummydb'
 
 function LatestTransactions() {

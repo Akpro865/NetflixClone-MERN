@@ -113,3 +113,75 @@ export const data1 = [
     status: "approved"
   },
 ]
+
+export const userRows = [
+  { id: 0,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 1,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },{ id: 2,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 3,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 4,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 6,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 7,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 8,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 9,
+   username: 'Snow',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "active",
+   transaction: "$234.00" 
+ },
+ { id: 10,
+   username: 'Thor',
+   profile: profile,
+   email: 'pro@gmail.com',
+   status: "not active",
+   transaction: "$234.00" 
+ },
+];
