@@ -11,16 +11,19 @@ import DynamicFeedIcon  from '@mui/icons-material/DynamicFeed'
 import ChatBubbleIcon  from '@mui/icons-material/ChatBubble'
 import ReportIcon  from '@mui/icons-material/Report'
 import './sidebar.scss'
+import { Link } from 'react-router-dom'
 
 function Sidebar() {
   return (
   	<div className='side1 sticky top-14 left-0 basis-1/5 bg-green-50'>
     	<div className='flex flex-col content-center'>
     		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Dashboard</h3>
-    		<div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
-    		<LineStyleIcon className='ml-3'/>
-    		<span className='ml-2'>Home</span>
+            <Link to='/'>
+    		  <div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
+    		  <LineStyleIcon className='ml-3'/>
+    		  <span className='ml-2'>Home</span>
     		</div>
+            </Link>
     		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
     		<TimelineIcon className='ml-3'/>
     		<span className='ml-2'>Analytics</span>
@@ -32,10 +35,12 @@ function Sidebar() {
     	</div>
     	<div className='flex flex-col content-center'>
     		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Quick Menu</h3>
-    		<div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
-    		<PermIdentityIcon className='ml-3'/>
-    		<span className='ml-2'>Users</span>
-    		</div>
+            <Link to='/users'>
+    		  <div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
+    		  <PermIdentityIcon className='ml-3'/>
+    		  <span className='ml-2'>Users</span>
+    		  </div>
+            </Link>
     		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
     		<StorefrontIcon className='ml-3'/>
     		<span className='ml-2'>Products</span>

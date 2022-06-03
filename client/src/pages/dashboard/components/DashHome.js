@@ -8,7 +8,7 @@ function DashHome() {
   return (
   	<div className='basis-4/5'>
       <FeaturedInfo />
-      {/* <Chart title='User Analytics' data={data} dataKey='Active User' grid /> */}
+      <Chart title='User Analytics' data={data} dataKey='Active User' grid />
       <div className='flex'>
        <LatestUser />
        <LatestTransactions />

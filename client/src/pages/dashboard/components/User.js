@@ -6,13 +6,16 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import PublishIcon from '@mui/icons-material/Publish'
 import LocationSearchingIcon from '@mui/icons-material/LocationSearching'
 import './user.scss'
+import { Link } from 'react-router-dom'
 
 function User() {
   return (
       <div className='basis-4/5 m-2'>
       	<div className='flex justify-between p-3'>
           <h2 className='text-3xl font-bold'>Edit User</h2>
-          <button className='py-1 px-2 font-semibold rounded bg-teal-500 hover:bg-teal-600 text-white'>Create</button>
+          <Link to='/newuser'>
+            <button className='py-1 px-2 font-semibold rounded bg-teal-500 hover:bg-teal-600 text-white'>Create</button>
+          </Link>
         </div>
       	<div className='flex '>
 	       <div className='detail1 basis-1/3 p-5 m-2 rounded'>
@@ -54,24 +57,24 @@ function User() {
 		       	 <div className=''>
 		       	   <form>
 		       	     <div className='p-1 flex flex-col'>
-		       	       <label className='text-xl text-gray-700'>Username</label>
-		       	       <input type='text' placeholder='Chris Hemsworth' className='p-1 border-b-2 hover:border-indigo-400 border-indigo-200'/>
+		       	       <label className=' text-gray-700'>Username</label>
+		       	       <input type='text' placeholder='Chris Hemsworth' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
-		       	       <label className='text-xl text-gray-700'>Full Name</label>
-		       	       <input placeholder='Chris John' className='p-1 border-b-2 hover:border-indigo-400 border-indigo-200'/>
+		       	       <label className=' text-gray-700'>Full Name</label>
+		       	       <input placeholder='Chris John' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
-		       	       <label className='text-xl text-gray-700'>Email</label>
-		       	       <input type='email' placeholder='prokumar@gmail.com' className='p-1 border-b-2 hover:border-indigo-400 border-indigo-200'/>
+		       	       <label className='text-gray-700'>Email</label>
+		       	       <input type='email' placeholder='prokumar@gmail.com' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
-		       	       <label className='text-xl text-gray-700'>Phone</label>
-		       	       <input placeholder='+91 956780321' className='p-1 border-b-2 hover:border-indigo-400 border-indigo-200'/>
+		       	       <label className=' text-gray-700'>Phone</label>
+		       	       <input placeholder='+91 956780321' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
-		       	       <label className='text-xl text-gray-700'>Address</label>
-		       	       <input placeholder='TamilNadu | India' className='p-1 border-b-2 hover:border-indigo-400 border-indigo-200'/>
+		       	       <label className=' text-gray-700'>Address</label>
+		       	       <input placeholder='TamilNadu | India' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
 		       	     </div>
 		       	   </form>
 		       	 </div>

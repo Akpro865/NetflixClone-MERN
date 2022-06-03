@@ -9,6 +9,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserList from './pages/dashboard/components/UserList'
 import User from './pages/dashboard/components/User'
+import NewUser from './pages/dashboard/components/NewUser'
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <div className='flex'>
      	  <Sidebar />           
         <Routes>
-         {/* <Route path="/" exact element={<DashHome />} /> */}      
+         <Route path="/" exact element={<DashHome />} />      
          <Route path="/users" element={<UserList />} />
          <Route path="/user/:userId" element={<User />} />
+         <Route path="/newuser" element={<NewUser />} />
         </Routes>
       </div>
   </Router>
