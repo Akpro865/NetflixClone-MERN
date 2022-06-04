@@ -48,6 +48,25 @@ export const data = [
   },
 ];
 
+export const productChartdata = [
+  {
+    name: 'Jan',
+    'sales': 400
+  },
+  {
+    name: 'Feb',
+    'sales': 90,
+  },
+  {
+    name: 'Mar',
+    'sales': 170,
+  },
+  {
+    name: 'Mar',
+    'sales': 100,
+  },
+]
+
 export const Users = [
   {
     img: profile,
@@ -185,3 +204,76 @@ export const userRows = [
    transaction: "$234.00" 
  },
 ];
+
+export const productRows = [
+  { id: 1,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 2,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 3,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 4,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 5,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 6,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 7,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 8,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 9,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+ { id: 10,
+   productname: 'Realme 9 pro',
+   img: profile,
+   stock: 5554,
+   status: "active",
+   price: "$234.00" 
+ },
+]

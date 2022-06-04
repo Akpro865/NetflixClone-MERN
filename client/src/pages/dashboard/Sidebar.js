@@ -17,7 +17,7 @@ function Sidebar() {
   return (
   	<div className='side1 sticky top-14 left-0 basis-1/5 bg-green-50'>
     	<div className='flex flex-col content-center'>
-    		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Dashboard</h3>
+    		<h3 className='pt-2 ml-4 text-gray-600 font-semibold'>Dashboard</h3>
             <Link to='/'>
     		  <div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
     		  <LineStyleIcon className='ml-3'/>
@@ -41,10 +41,12 @@ function Sidebar() {
     		  <span className='ml-2'>Users</span>
     		  </div>
             </Link>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
-    		<StorefrontIcon className='ml-3'/>
-    		<span className='ml-2'>Products</span>
-    		</div>
+            <Link to='/products'>
+    		  <div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		  <StorefrontIcon className='ml-3'/>
+    		  <span className='ml-2'>Products</span>
+    		  </div>
+            </Link>
     		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
     		<AttachMoneyIcon className='ml-3'/>
     		<span className='ml-2'>Transactions</span>    		

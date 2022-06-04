@@ -1,31 +1,31 @@
 function NewUser() {
 	return (
-	 <div className='basis-4/5 bg-green-00 m-4 p-4'>
+	 <div className='basis-4/5 m-4 p-4'>
 	   <h2 className='text-3xl font-semibold'>New User</h2>
 	   <form className='flex flex-wrap p-3'>
 	     <div className='w-5/12 p-1 flex flex-col m-2'>
 	       <label className='p-1 text-gray-700'>Username</label>
-	       <input type='text' placeholder='Ajithkumar' className='h-12 rounded border-2' />
+	       <input type='text' placeholder='Ajithkumar' className='h-12 pl-3 rounded border-2' />
 	     </div>
 	     <div className='w-5/12 flex flex-col p-1 m-2'>
 	       <label className='p-1 text-gray-700'>Fullname</label>
-	       <input type='text' placeholder='jhon Smith' className='h-12 rounded border-2' />
+	       <input type='text' placeholder='jhon Smith' className='h-12 pl-3 rounded border-2' />
 	     </div>
 	     <div className='w-5/12 flex flex-col p-1 m-2'>
 	       <label className='p-1 text-gray-700'>Email</label>
-	       <input type='email' placeholder='pro@gmail.com' className='h-12 rounded border-2' />
+	       <input type='email' placeholder='pro@gmail.com' className='h-12 pl-3 rounded border-2' />
 	     </div>
 	     <div className='w-5/12 flex flex-col p-1 m-2'>
 	       <label className='p-1 text-gray-700'>Password</label>
-	       <input type='text' placeholder='password' className='h-12 rounded border-2' />
+	       <input type='text' placeholder='password' className='h-12 pl-3 rounded border-2' />
 	     </div>
 	     <div className='w-5/12 flex flex-col p-1 m-2'>
 	       <label className='p-1 text-gray-700'>Phone</label>
-	       <input type='text' placeholder='+91 9876343220' className='h-12 rounded border-2' />
+	       <input type='text' placeholder='+91 9876343220' className='pl-3 h-12 rounded border-2' />
 	     </div>
 	     <div className='w-5/12 flex flex-col p-1 m-2'>
 	       <label className='p-1 text-gray-700'>Address</label>
-	       <input type='text' placeholder='TamilNadu | India' className='h-12 rounded border-2' />
+	       <input type='text' placeholder='TamilNadu | India' className='pl-3 h-12 rounded border-2' />
 	     </div>
 	     <div className='w-5/12 flex flex-col  p-1 m-2'>
 	       <label className='p-1 text-gray-700'>gender</label>
@@ -40,9 +40,9 @@ function NewUser() {
 	     </div>
 	     <div className='w-5/12 flex flex-col p-1 m-2'>
 	       <label for='status' className='p-1 text-gray-700'>Active</label>
-	       <select name='status' id='status' className='h-12'>
-	         <option value='yes' className='p-2'>yes</option>
-	         <option value='no' className='p-2'>no</option>
+	       <select name='status' id='status' className='h-10 rounded'>
+	         <option value='yes' className=''>yes</option>
+	         <option value='no' className=''>no</option>
 	       </select>
 	     </div>
 	   </form>

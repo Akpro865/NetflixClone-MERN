@@ -6,7 +6,7 @@ function LatestTransactions() {
 		return <button className={"dynbutton " + type}>{type}</button>
 	}
   return (
-  	<div className='transaction1 m-5 basis-2/3 bg-orange-50 hover:bg-yellow-50 cursor-pointer p-5 rounded-xl overflow-clip'>
+  	<div className='transaction1 m-5 basis-2/3 hover:bg-green-50 cursor-pointer p-5 rounded-xl overflow-clip'>
   	<h3 className='text-2xl font-semibold text-gray-600'>Latest Transactions</h3>
   	<div className='w-full h-full overflow-hidden'>
   	<table className='w-full h-full ml-3'>
