@@ -2,7 +2,7 @@ const User = require('../models/User')
 const bcrypt = require('bcryptjs')
 const asyncHandler = require('express-async-handler')
 
-// update
+// update user
 const updateUser = asyncHandler( async(req, res) => {
 	if(req.user.id === req.params.id || req.user.isAdmin) {
 		if(req.body.password) {
@@ -21,7 +21,7 @@ const updateUser = asyncHandler( async(req, res) => {
 	}
 })
 
-// delete
+// delete user
 const deleteUser = async(req, res) => {
 	if(req.user.id === req.params.id || req.user.isAdmin) {
 		
@@ -65,4 +65,34 @@ const getUsers = async(req, res) => {
 	}
 }
 
-module.exports = { updateUser, deleteUser, getUser, getUsers }
+// user stats
+const getStats = async(req, res) => {
+	const today = new Date()
+	const lastYear = today.setFullYear(today.setFullYear() - 1 )
+
+	const months = [
+		"January", "February", "March", "April", "May", "June",
+		"July", "August", "September", "October", "November", "December"
+	]
+
+	try {
+		const stat = await User.aggregate([
+			{
+				$project: {
+					month: { $month: "$createdAt" }
+				}
+			}, {
+				$group: {
+					_id: "$month",
+					total: { $sum: 1 }
+				}
+			}
+		])
+
+		res.status(200).json(stat)
+	} catch (err) {
+		res.status(500).json(err)	
+	}
+}
+
+module.exports = { updateUser, deleteUser, getUser, getUsers, getStats }
