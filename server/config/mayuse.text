@@ -1,0 +1,13 @@
+{
+  title: "Thor Rangnork",
+  desc: "ak is a real pro in world",
+  img: "https://images.pexels.com/photos/39853/woman-girl-freedom-happy-39853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  imgTitle: "https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  imgSm: "https://images.pexels.com/photos/800005/pexels-photo-800005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  trailer: "https://player.vimeo.com/external/527275561.sd.mp4?s=e23b4455249edf7672156bb17ce9a6e0ebeff7ba&profile_id=139&oauth2_token_id=57447761",
+  video: "https://player.vimeo.com/external/527275561.sd.mp4?s=e23b4455249edf7672156bb17ce9a6e0ebeff7ba&profile_id=139&oauth2_token_id=57447761",
+  year: "2001",
+  limit: "20+",
+  genre: "comedy",
+  isSeries: true
+  }

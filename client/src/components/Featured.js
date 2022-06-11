@@ -3,14 +3,26 @@ import Titleimg from '../assets/avengers.png'
 import './Featured.scss'
 import PlayArrowOutlinedIcon from'@mui/icons-material/PlayArrowOutlined'
 import InfoOutlinedIcon from'@mui/icons-material/InfoOutlined'
+import { useEffect, useState } from 'react'
+import { fetchRandom, getRandom } from '../features/movieSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 function Featured({type}) {
+
+  const dispatch = useDispatch()
+  const data = useSelector(getRandom)
+
+  useEffect(() => {
+    dispatch(fetchRandom(type))
+
+  }, [type])
+
   return (
   	<div className='featured relative mb-3'>
 
   		{type && (
   			<div className='absolute top-20 left-12 font-medium text-xl text-white flex items-center'>
-  				<span className='text-3xl font-semibold'>{type === 'movie' ? 'Movies' : 'Series'}</span>
+  				<span className='text-3xl font-semibold'>{type === 'movies' ? 'Movies' : 'Series'}</span>
   				<select name='genre' id='genre' className='cursor-pointer bg-[#0b0b0b] border border-white text-white ml-5 p-2'>
   					<option>Genre</option>
   					<option value='adventure'>Adventure</option>
@@ -31,11 +43,10 @@ function Featured({type}) {
   			</div>
   		)}
 
-	    <img src={thorl} alt='Featured' className='w-full h-full object-cover'/>
+	    <img src={data.img} alt='Featured' className='w-full h-full object-cover'/>
 	    <div className='w-4/12 absolute left-8 bottom-10 flex flex-col'>
-	     	<img src={Titleimg} alt='Titleimg' className='w-3/4 mb-1'/>
-	     	<span className='text-white font-medium mx-4'>img elements must have an alt prop, either with meaningful text, or an empty string for decorative images
-	     	img elements must have an alt prop, either with meaningful text, or an empty string for decorative images
+	     	<img src={data.imgTitle} alt='Titleimg' className='w-3/4 mb-1'/>
+	     	<span className='text-white font-medium mx-4'>{data.desc}
 	     	</span>
 	     	<div className='text-lg mt-4 flex'>
 	     		<button className='border-none bg-white p-3 rounded ml-4 hover:bg-blue-600 hover:text-white'>

@@ -5,6 +5,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import './Header.scss'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -18,9 +19,15 @@ function Header() {
     	<div className='flex items-center'>    		
     		<img className='h-8' src={netflixLogo} alt='netflixLogo'/>    		
     		<div>
+              <Link to='/'>
     			<span className='m-3'>Home</span>
+              </Link>
+              <Link to='/movies'>
     			<span className='m-3'>Movies</span>
+              </Link>
+              <Link to='/series'>
     			<span className='m-3'>Series</span>
+              </Link>
     			<span className='m-3'>Popular</span>
     			<span className='m-3'>MyList</span>
     		</div>

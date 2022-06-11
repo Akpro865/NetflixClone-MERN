@@ -1,36 +1,29 @@
+import React from 'react'
 import Home from './components/Home'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import Watch from './pages/Watch'
-import Topbar from './pages/dashboard/Topbar'
-import Sidebar from './pages/dashboard/Sidebar'
-import DashHome from './pages/dashboard/components/DashHome'
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import UserList from './pages/dashboard/components/UserList'
-import User from './pages/dashboard/components/User'
-import NewUser from './pages/dashboard/components/NewUser'
-import ProductList from './pages/dashboard/components/ProductList'
-import Product from './pages/dashboard/components/Product'
-import NewProduct from './pages/dashboard/components/NewProduct'
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
+  const user = true
+  
   return (
   	<Router>     
-      <Topbar />
-      <div className='flex'>
-     	  <Sidebar />           
-        <Routes>
-         <Route path="/" exact element={<DashHome />} />      
-         <Route path="/users" element={<UserList />} />
-         <Route path="/user/:userId" element={<User />} />
-         <Route path="/newuser" element={<NewUser />} />
-         <Route path="/products" element={<ProductList />} />
-         <Route path="/product/:productId" element={<Product />} />
-         <Route path="/newproduct" element={<NewProduct />} />
-        </Routes>
-      </div>
-  </Router>
+      <Routes>
+        <Route exact path='/' element={user ? <Home /> : <Navigate to='/register' />} />
+        <Route exact path='/register' element={!user ? <Register /> : <Navigate to='/' />} />
+        <Route exact path='/login' element={!user ? <Login /> : <Navigate to='/' />} />
+        {user && (
+          <>
+          <Route path='/movies' element={<Home type='movie' />} />
+          <Route path='/series' element={<Home type='series' />} />
+          <Route path='/watch' element={<Watch />} />
+          </>
+        )}                                  
+      </Routes>
+    </Router>
   )
 }
 

@@ -1,4 +1,4 @@
-import liginimg from '../assets/login.jpg'
+import loginimg from '../assets/login.jpg'
 import netflixLogo from '../assets/netflix.png'
 import './login.scss'
 
