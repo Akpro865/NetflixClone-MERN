@@ -1,4 +1,4 @@
-import profile from '../../../assets/ak.jpg'
+import profile from '../assets/ak.jpg'
 import PermIdentityIcon from '@mui/icons-material/PermIdentity'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
@@ -14,7 +14,7 @@ function User() {
       	<div className='flex justify-between p-3'>
           <h2 className='text-3xl font-bold'>Edit User</h2>
           <Link to='/newuser'>
-            <button className='py-1 px-2 font-semibold rounded bg-teal-500 hover:bg-teal-600 text-white'>Create</button>
+            <button className='py-2 px-3 border-none font-semibold rounded bg-teal-500 hover:bg-teal-600 text-white'>Create</button>
           </Link>
         </div>
       	<div className='flex '>
@@ -36,7 +36,7 @@ function User() {
 	              <CalendarTodayIcon className='mr-3 text-gray-700'/>
 	              <span>16.0.2001</span>
 	           </div>
-	           <h2 className='p-2 text-gray-700'>User Details</h2>
+	           <h2 className='p-2 text-gray-700'>Contact</h2>
 	           <div className='p-2 flex items-center'>
 	             <PhoneAndroidIcon className='mr-3 text-gray-700'/>
 	             <span>+91 934430534</span>
@@ -58,23 +58,23 @@ function User() {
 		       	   <form>
 		       	     <div className='p-1 flex flex-col'>
 		       	       <label className=' text-gray-700'>Username</label>
-		       	       <input type='text' placeholder='Chris Hemsworth' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
+		       	       <input type='text' placeholder='Chris Hemsworth' className='p-1 rounded hover:border-gray-400 font-medium h-10'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
 		       	       <label className=' text-gray-700'>Full Name</label>
-		       	       <input placeholder='Chris John' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
+		       	       <input placeholder='Chris John' className='p-1 border-2 rounded hover:border-gray-400 h-10'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
 		       	       <label className='text-gray-700'>Email</label>
-		       	       <input type='email' placeholder='prokumar@gmail.com' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
+		       	       <input type='email' placeholder='prokumar@gmail.com' className='p-1 border-2 rounded hover:border-gray-400 h-10'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
 		       	       <label className=' text-gray-700'>Phone</label>
-		       	       <input placeholder='+91 956780321' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
+		       	       <input placeholder='+91 956780321' className='p-1 border-2 rounded hover:border-gray-400 h-10'/>
 		       	     </div>
 		       	     <div className='p-1 flex flex-col'>
 		       	       <label className=' text-gray-700'>Address</label>
-		       	       <input placeholder='TamilNadu | India' className='p-1 border-2 rounded hover:border-indigo-400 border-indigo-200 h-12'/>
+		       	       <input placeholder='TamilNadu | India' className='p-1 border-2 rounded hover:border-gray-400 h-10'/>
 		       	     </div>
 		       	   </form>
 		       	 </div>
@@ -84,7 +84,7 @@ function User() {
 			       	   <label htmlFor='file'><PublishIcon className='cursor-pointer'/></label>
 			       	   <input type='file' id='file' className='hidden'/>
 			       	 </div>
-			       	 <button className='bg-blue-600 rounded cursor-pointer py-1 px-2 text-white font-semibold hover:bg-blue-700'>update</button>
+			       	 <button className='bg-blue-600 border-none rounded cursor-pointer py-2 px-3 cursor-pointer text-white font-semibold hover:bg-blue-700'>update</button>
 			     </div>
 		       </div>
 

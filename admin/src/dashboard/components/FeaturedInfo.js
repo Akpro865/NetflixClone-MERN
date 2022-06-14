@@ -11,7 +11,7 @@ function FeaturedInfo() {
        <h3 className='text-xl flex justify-center text-gray-700'>Revenue</h3>
        <div  className='flex justify-evenly p-3'>
        <span className='text-2xl font-semibold'>$ 2347</span>
-       <span className='flex content-center'>+1.7 <ArrowUpwardIcon className='text-green-600'/> </span>
+       <span className='flex items-center'>+1.7 <ArrowUpwardIcon className='text-green-600'/> </span>
        </div>
        <p className='flex justify-center text-gray-600'>compared to last month</p>
       </div>
@@ -19,7 +19,7 @@ function FeaturedInfo() {
       	<h3 className='text-xl flex justify-center text-gray-700'>Sales</h3>
       	<div  className='flex justify-evenly p-3'>
       	<span className='text-2xl font-semibold'>$ 1234</span>
-        <span className='flex content-center'>+2.3 <ArrowUpwardIcon className='text-green-600'/> </span>
+        <span className='flex items-center'>+2.3 <ArrowUpwardIcon className='text-green-600'/> </span>
         </div>
         <p className='flex justify-center text-gray-600'>compared to last month</p>
       </div>
@@ -27,7 +27,7 @@ function FeaturedInfo() {
       	<h3 className='text-xl flex justify-center text-gray-700'>Growth</h3>
       	<div className='flex justify-evenly content-center p-3'>
       	<span className='text-2xl font-semibold'>$ 976</span>
-        <span className='flex content-center'>-1.1 <ArrowDownwardIcon className='text-red-600'/> </span>
+        <span className='flex items-center'>-1.1 <ArrowDownwardIcon className='text-red-600'/> </span>
         </div>
         <p className='flex justify-center text-gray-600'>compared to last month</p>
 

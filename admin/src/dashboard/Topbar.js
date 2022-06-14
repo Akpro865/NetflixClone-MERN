@@ -1,11 +1,11 @@
 import NotificationsNoneIcon  from '@mui/icons-material/NotificationsNone'
 import LanguageIcon  from '@mui/icons-material/Language'
 import SettingsIcon  from '@mui/icons-material/Settings'
-import profile from '../../assets/ak.jpg'
+import profile from './assets/ak.jpg'
 
 function Topbar() {
   return (
-  	<div className='bg-white h-14 w-full sticky top-0 z-50'>
+  	<div className='bg-white h-14 w-full sticky top-0 left-0 z-50'>
   	 <div className='h-full px-5 flex justify-between items-center'>
 	    <div className='text-2xl font-bold text-indigo-800'>
 	     	AkDashboard

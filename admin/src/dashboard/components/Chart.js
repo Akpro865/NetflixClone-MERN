@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 function Chart({title, data, dataKey, grid}) {
   return (
-  	<div className='chart1 m-5 p-5 rounded  hover:bg-stone-100'>
+  	<div className='chart1 m-5 p-5 rounded'>
   	 <h3 className='mb-5 text-xl font-semibold'>{title}</h3>
   	 <ResponsiveContainer width='100%' aspect={4/1}>
   	  <LineChart data={data}>

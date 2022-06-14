@@ -15,69 +15,65 @@ import { Link } from 'react-router-dom'
 
 function Sidebar() {
   return (
-  	<div className='side1 sticky top-14 left-0 basis-1/5 bg-green-50'>
+  	<div className='side1 sticky top-14 left basis-1/5 bg-green-50'>
     	<div className='flex flex-col content-center'>
-    		<h3 className='pt-2 ml-4 text-gray-600 font-semibold'>Dashboard</h3>
+    		<h3 className='ml-4 text-gray-800 font-medium'>Dashboard</h3>
             <Link to='/'>
-    		  <div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
+    		  <div className='ml-8 p-1 flex cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		  <LineStyleIcon className='ml-3'/>
     		  <span className='ml-2'>Home</span>
     		</div>
             </Link>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<TimelineIcon className='ml-3'/>
     		<span className='ml-2'>Analytics</span>
     		</div>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<TrendingUpIcon className='ml-3'/>
     		<span className='ml-2'>Sales</span>
     		</div>
     	</div>
     	<div className='flex flex-col content-center'>
-    		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Quick Menu</h3>
+    		<h3 className='ml-4 text-gray-800 font-medium'>Quick Menu</h3>
             <Link to='/users'>
-    		  <div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
+    		  <div className='ml-8 p-1 flex cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		  <PermIdentityIcon className='ml-3'/>
     		  <span className='ml-2'>Users</span>
     		  </div>
             </Link>
             <Link to='/products'>
-    		  <div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		  <div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		  <StorefrontIcon className='ml-3'/>
     		  <span className='ml-2'>Products</span>
     		  </div>
             </Link>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<AttachMoneyIcon className='ml-3'/>
     		<span className='ml-2'>Transactions</span>    		
     		</div>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
-    		<BarChartIcon className='ml-3'/>
-    		<span className='ml-2'>Reports</span>
-    		</div>
     	</div>
     	<div className='flex flex-col content-center'>
-    		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Notifications</h3>
-    		<div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<h3 className='ml-4 text-gray-800 font-medium'>Notifications</h3>
+    		<div className='ml-8 p-1 flex cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<MailOutlineIcon className='ml-3'/>
     		<span className='ml-2'>Mail</span>
     		</div>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<DynamicFeedIcon className='ml-3'/>
     		<span className='ml-2'>Message</span>
     		</div>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<ChatBubbleIcon className='ml-3'/>
     		<span className='ml-2'>Feedback</span>
     		</div>
     	</div>
     	<div className='flex flex-col content-center'>
-    		<h3 className='p-0.5 ml-4 text-gray-600 font-semibold'>Staff</h3>
-    		<div className='ml-8 p-2 flex cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<h3 className=' ml-4 text-gray-800 font-medium'>Staff</h3>
+    		<div className='ml-8 p-1 flex cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<WorkOutlineIcon className='ml-3'/>
     		<span className='ml-2'>Manage</span>
     		</div>
-    		<div className='ml-8 p-2 cursor-pointer rounded-2xl hover:bg-green-300'>
+    		<div className='ml-8 p-1 cursor-pointer flex items-center rounded-2xl hover:bg-green-300'>
     		<ReportIcon className='ml-3'/>
     		<span className='ml-2'>Reports</span>
     		</div>

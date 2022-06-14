@@ -46,7 +46,7 @@ function NewUser() {
 	       </select>
 	     </div>
 	   </form>
-	   <button className='bg-blue-600 rounded cursor-pointer py-2 px-10 text-white font-semibold hover:bg-blue-700'>update</button>
+	   <button className='bg-blue-600 border-none rounded cursor-pointer py-3 px-12 text-white font-semibold hover:bg-blue-700'>update</button>
 	 </div>
 	)
 }
